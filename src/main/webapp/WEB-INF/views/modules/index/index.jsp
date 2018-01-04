@@ -2,6 +2,7 @@
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 <html>
 <head>
+<%@include file="/WEB-INF/views/include/index.jsp" %>
 <title>Home</title>
 <meta charset="utf-8">
 <!----//End-top-nav-script---->
@@ -12,28 +13,27 @@
 		<div class="container">
 			<div class="header">
 				<div class="contact-no">
-					<span>8 800 500 50 50</span>
+					<span>0471 1234567</span>
 				</div>
 				<div class="logo">
-					<a href="#"><img src="images/logo.png" title="miami" /></a>
+					<a href="#"><img src="${ctxStatic}/index/images/logo.png" title="奈林" /></a>
 				</div>
 				<div class="contact-order">
-					<a href="#">Call to order</a>
+					<a href="a">后台管理</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 			<!----start-top-nav---->
 			<nav class="top-nav">
 				<ul class="top-nav">
-					<li class="active"><a href="#home" class="scroll">Home</a></li>
-					<li class="page-scroll"><a href="#about" class="scroll">About
-							us</a></li>
-					<li class="page-scroll"><a href="#gal" class="scroll">Gallery</a></li>
-					<li class="page-scroll"><a href="#con" class="scroll">Consulation</a></li>
-					<li class="page-scroll"><a href="#test" class="scroll">Testimonials</a></li>
-					<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+					<li class="active"><a href="#home" class="scroll">首页首页首页</a></li>
+					<li class="page-scroll"><a href="#about" class="scroll">公司简介</a></li>
+					<li class="page-scroll"><a href="#gal" class="scroll">最新楼盘</a></li>
+					<li class="page-scroll"><a href="#con" class="scroll">咨询咨询</a></li>
+					<li class="page-scroll"><a href="#test" class="scroll">公司骨干</a></li>
+					<li class="page-scroll"><a href="#contact" class="scroll">留言</a></li>
 				</ul>
-				<a href="#" id="pull"><img src="images/nav-icon.png"
+				<a href="#" id="pull"><img src="${ctxStatic}/index/images/nav-icon.png"
 					title="menu" /></a>
 			</nav>
 		</div>
@@ -83,7 +83,7 @@
 				<div class="gallery-grids-row1">
 					<div class="col-md-8 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g1.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g1.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -96,7 +96,7 @@
 					</div>
 					<div class="col-md-4 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g2.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g2.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -115,7 +115,7 @@
 				<div class="gallery-grids-row1">
 					<div class="col-md-6 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g3.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g3.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -128,7 +128,7 @@
 					</div>
 					<div class="col-md-6 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g4.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g4.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -148,7 +148,7 @@
 				<div class="gallery-grids-row1">
 					<div class="col-md-4 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g2.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g2.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -161,7 +161,7 @@
 					</div>
 					<div class="col-md-8 gallery-grid1">
 						<a href="#" class="b-link-stripe b-animate-go  thickbox"> <img
-							class="port-pic" src="images/g1.jpg" />
+							class="port-pic" src="${ctxStatic}/index/images/g1.jpg" />
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left    b-delay03 ">
 									<span> Miami places</span>
@@ -226,7 +226,7 @@
 			<!----start-testmonials-grids----->
 			<div class="testmonials-grids text-center">
 				<div class="col-md-4 testmonial-grid">
-					<a href="#"><img class="t-pic" src="images/t1.jpg" title="name" /></a>
+					<a href="#"><img class="t-pic" src="${ctxStatic}/index/images/t1.jpg" title="name" /></a>
 					<h5>
 						<a href="#">Stev Joni</a>
 					</h5>
@@ -235,7 +235,7 @@
 						(USA).</p>
 				</div>
 				<div class="col-md-4 testmonial-grid">
-					<a href="#"><img class="t-pic" src="images/t2.jpg" title="name" /></a>
+					<a href="#"><img class="t-pic" src="${ctxStatic}/index/images/t2.jpg" title="name" /></a>
 					<h5>
 						<a href="#">Alisher Usmanov</a>
 					</h5>
@@ -245,7 +245,7 @@
 						alone and blissfully happy in the local edge.</p>
 				</div>
 				<div class="col-md-4 testmonial-grid">
-					<a href="#"><img class="t-pic" src="images/t3.jpg" title="name" /></a>
+					<a href="#"><img class="t-pic" src="${ctxStatic}/index/images/t3.jpg" title="name" /></a>
 					<h5>
 						<a href="#">Stev Joni</a>
 					</h5>
@@ -297,7 +297,7 @@
 	<!----start-footer---->
 	<div class="footer text-center">
 		<div class="container">
-			<a href="#"> <img src="images/logo.png" title="miami" /></a>
+			<a href="#"> <img src="${ctxStatic}/index/images/logo.png" title="miami" /></a>
 			<p class="copy-right">
 				Copyright &copy; 2014.Company name All rights reserved.<a
 					target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>

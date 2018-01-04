@@ -1,9 +1,9 @@
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="${ctxStatic}/index/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="${ctxStatic}/index/js/jquery.min.js"></script>
 <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="${ctxStatic}/index/js/move-top.js"></script>
+<script type="text/javascript" src="${ctxStatic}/index/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event) {
@@ -16,7 +16,7 @@
 </script>
 <!---- start-smoth-scrolling---->
 <!-- Custom Theme files -->
-<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<link href="${ctxStatic}/index/css/theme-style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript">
