@@ -25,7 +25,7 @@
 			</div>
 			<!----start-top-nav---->
 			<nav class="top-nav">
-				<ul class="top-nav">
+				<ul class="top-nav">  
 					<li class="active"><a href="#home" class="scroll">首页首页首页</a></li>
 					<li class="page-scroll"><a href="#about" class="scroll">公司简介</a></li>
 					<li class="page-scroll"><a href="#gal" class="scroll">最新楼盘</a></li>
