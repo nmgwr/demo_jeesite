@@ -1,0 +1,51 @@
+1、因为数据库在本地所以除了jeesite自带的表以外新创建的表都要本分好sql脚本上传到dblog里。
+2、如果有基础数据也把insert写到下边。
+3、sql脚本中删掉表空间的部分
+4、sql脚本以表名命名
+5、表均以T_开头、序列以S_开头
+6、所有表都必须有一以下必须字段（N代表不可空，deal_flag是删除标记默认0有效，jeesite数据的删除是逻辑删除，即把deal_flag更新为1代表数据已删除,id必须为主键）
+    ID	VARCHAR2(64)	N
+    CREATE_BY	VARCHAR2(64)	N
+    CREATE_DATE	TIMESTAMP(6)	N
+    UPDATE_BY	VARCHAR2(64)	N
+    UPDATE_DATE	TIMESTAMP(6)	N
+    REMARKS	NVARCHAR2(255)	Y
+    DEL_FLAG	CHAR(1)	N	'0'
+7、例如我新建的学生表
+
+    -- Create table
+    create table T_STUDENT
+    (
+      ID          VARCHAR2(64) not null,
+      NAME        VARCHAR2(64),
+      CREATE_BY   VARCHAR2(64) not null,
+      CREATE_DATE TIMESTAMP(6) not null,
+      UPDATE_BY   VARCHAR2(64) not null,
+      UPDATE_DATE TIMESTAMP(6) not null,
+      REMARKS     NVARCHAR2(255),
+      DEL_FLAG    CHAR(1) default '0' not null
+    )
+    ;
+    -- Add comments to the table
+    comment on table T_STUDENT
+      is '学生表';
+    -- Add comments to the columns
+    comment on column T_STUDENT.ID
+      is '学号';
+    comment on column T_STUDENT.NAME
+      is '姓名';
+    comment on column T_STUDENT.CREATE_BY
+      is '创建人';
+    comment on column T_STUDENT.CREATE_DATE
+      is '创建时间';
+    comment on column T_STUDENT.UPDATE_BY
+      is '更新人';
+    comment on column T_STUDENT.UPDATE_DATE
+      is '更新时间';
+    comment on column T_STUDENT.REMARKS
+      is '备注';
+    comment on column T_STUDENT.DEL_FLAG
+      is '删除标记';
+    -- Create/Recreate primary, unique and foreign key constraints
+    alter table T_STUDENT
+      add constraint pk_syudent_id primary key (ID);
